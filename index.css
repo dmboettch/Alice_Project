@@ -1,0 +1,48 @@
+h1, h2, .picture, ul, li{
+    text-align: center;
+}
+h1{
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.0em;
+}
+h2{
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+body {
+    background-color: rgb(160, 193, 222);
+}
+li{
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.0em;
+    float: left;
+    display: inline;
+    width: 25%; /*because there are 12 of them so this places them at 1/4*/
+    white-space: nowrap;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul:after{   /*sometimes uses :: but not all browsers recognize it insert after ul*/
+    /*need to do this to identify the ul because we are using a float*/
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+    display: block;
+}
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+

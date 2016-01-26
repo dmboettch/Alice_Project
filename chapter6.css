@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(160, 193, 222);
+    background-image: url(pig.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: contain;
+}
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.0rem;
+}
+li{
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.0em;
+    float: left;
+    display: inline;
+    width: 33.3%;
+}
+ul, li{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul:after{   /*sometimes uses :: but not all browsers recognize it insert after ul*/
+    /*need to do this to identify the ul because we are using a float*/
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+    display: block;
+}
+h1 {
+    text-align: center;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+p, h1, ul{
+    display: block;
+    width: 60%;
+    float: right;
+}
+p{
+    font-size: large;
+}
+p:after{   /*sometimes uses :: but not all browsers recognize it insert after ul*/
+    /*need to do this to identify the p because we are using a float*/
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+    display: block;
+}
